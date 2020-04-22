@@ -68,9 +68,22 @@ body {
   user-select: none; /* Standard syntax */
 }
 
-.imageCol {
-  align-self: baseline;
+.icon img {
+  margin-top: 5%;
+  @extend .d-block;
+  @extend .ml-auto;
+  @extend .mr-3;
+  width: 5%;
+}
 
+a img {
+  transition: .3s opacity;
+}
+
+a img:hover {
+  opacity: .75;
+  transition: .3s opacity;
+  cursor: pointer;
 }
 
 
