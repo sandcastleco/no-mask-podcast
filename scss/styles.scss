@@ -1,0 +1,100 @@
+// // // // // // // // // // // // // // // // // // // // // // //
+//                                                                //
+//                        CSS VARIABLES                           //
+//                                                                //
+// // // // // // // // // // // // // // // // // // // // // // //
+
+//COLOR VARIABLES
+$blood: #ed1c24;
+
+//FONT VARIABLES
+$baseFamily: 'sofia-pro-condensed';
+$thinWeight: 200;
+$baseWeight: 300;
+$boldWeight: 600;
+
+$baseFont: 1rem;
+$mediumFont: 1.5rem;
+$largeFont: 2.5rem;
+$massiveFont: 3rem;
+
+//SPACERS
+$sp1: .25rem;
+$sp2: .5rem;
+$sp3: 1rem;
+$sp4: 1.5rem;
+$sp5: 3rem;
+$sp6: 4rem;
+$sp7: 5rem;
+
+
+// // // // // // // // // // // // // // // // // // // // // // //
+//                                                                //
+//                            IMPORTS                             //
+//                                                                //
+// // // // // // // // // // // // // // // // // // // // // // //
+
+//BOOTSTRAP COLOR OVERRIDES/ADDITIONS
+$theme-colors: (
+  "blood": $blood
+);
+
+@import 'bootstrap/scss/bootstrap.scss';
+
+
+
+// // // // // // // // // // // // // // // // // // // // // // //
+//                                                                //
+//                            GENERAL                             //
+//                                                                //
+// // // // // // // // // // // // // // // // // // // // // // //
+html {
+
+}
+
+body {
+  font-family: $baseFamily;
+  font-weight: $baseWeight;
+  font-size: $baseFont;
+  -moz-font-feature-settings: "salt";
+  -webkit-font-feature-settings: "salt";
+  font-feature-settings: "salt";
+  background: $snow;
+  overflow-x:hidden;
+}
+
+.noUserSelect {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10+ and Edge */
+  user-select: none; /* Standard syntax */
+}
+
+
+// // // // // // // // // // // // // // // // // // // // // // //
+//                                                                //
+//                               TEXT                             //
+//                                                                //
+// // // // // // // // // // // // // // // // // // // // // // //
+
+
+
+// // // // // // // // // // // // // // // // // // // // // // //
+//                                                                //
+//                            BUTTONS                             //
+//                                                                //
+// // // // // // // // // // // // // // // // // // // // // // //
+.btn-lg, .btn {
+  border-radius: $sp5;
+  //@extend .mx-2;
+  @extend .my-2;
+  @extend .px-3;
+  @extend .noUserSelect;
+  transition: all .2s;
+  @extend .justify-content-center;
+}
+
+// // // // // // // // // // // // // // // // // // // // // // //
+//                                                                //
+//                              SOCIAL                            //
+//                                                                //
+// // // // // // // // // // // // // // // // // // // // // // //
