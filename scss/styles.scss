@@ -8,7 +8,7 @@
 $blood: #ed1c24;
 
 //FONT VARIABLES
-$baseFamily: 'sofia-pro-condensed';
+$baseFamily: 'din-condensed';
 $thinWeight: 200;
 $baseWeight: 300;
 $boldWeight: 600;
@@ -59,7 +59,6 @@ body {
   -moz-font-feature-settings: "salt";
   -webkit-font-feature-settings: "salt";
   font-feature-settings: "salt";
-  background: $snow;
   overflow-x:hidden;
 }
 
@@ -67,6 +66,11 @@ body {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10+ and Edge */
   user-select: none; /* Standard syntax */
+}
+
+.imageCol {
+  align-self: baseline;
+
 }
 
 
@@ -83,15 +87,8 @@ body {
 //                            BUTTONS                             //
 //                                                                //
 // // // // // // // // // // // // // // // // // // // // // // //
-.btn-lg, .btn {
-  border-radius: $sp5;
-  //@extend .mx-2;
-  @extend .my-2;
-  @extend .px-3;
-  @extend .noUserSelect;
-  transition: all .2s;
-  @extend .justify-content-center;
-}
+
+
 
 // // // // // // // // // // // // // // // // // // // // // // //
 //                                                                //
