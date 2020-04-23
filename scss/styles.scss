@@ -13,7 +13,7 @@ $thinWeight: 200;
 $baseWeight: 300;
 $boldWeight: 600;
 
-$baseFont: 1rem;
+$baseFont: 1.5rem;
 $mediumFont: 1.5rem;
 $largeFont: 2.5rem;
 $massiveFont: 3rem;
@@ -39,6 +39,8 @@ $theme-colors: (
   "blood": $blood
 );
 
+$enable-responsive-font-sizes: true;
+
 @import 'bootstrap/scss/bootstrap.scss';
 
 
@@ -55,11 +57,20 @@ html {
 body {
   font-family: $baseFamily;
   font-weight: $baseWeight;
-  font-size: $baseFont;
+  //font-size: $baseFont;
   -moz-font-feature-settings: "salt";
   -webkit-font-feature-settings: "salt";
   font-feature-settings: "salt";
   overflow-x:hidden;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: $blood;
+  text-decoration: none;
 }
 
 .noUserSelect {
@@ -68,12 +79,28 @@ body {
   user-select: none; /* Standard syntax */
 }
 
-.icon img {
-  margin-top: 5%;
-  @extend .d-block;
-  @extend .ml-auto;
-  @extend .mr-3;
-  width: 5%;
+.icon {
+  @include media-breakpoint-only(xs) {
+    //height: 100%;
+    width: 40px;
+    margin-top: 5%;
+    margin-left: 1rem;
+    left: 0;
+  }
+
+  @include media-breakpoint-up(sm) {
+    margin-top: 4.5%;
+    //display: block;
+    //@extend .col-auto;
+    height: 100%;
+    margin-left: auto;
+    margin-right: $sp3;
+    width: 4%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 5%;
+  }
 }
 
 a img {
@@ -81,11 +108,21 @@ a img {
 }
 
 a img:hover {
-  opacity: .75;
+  opacity: .55;
   transition: .3s opacity;
   cursor: pointer;
 }
 
+.link {
+  @extend .ml-auto;
+  @extend .float-right;
+  @extend .mb-3;
+  @extend .mr-4;
+  @extend .position-absolute;
+  bottom:0;
+  right:1rem;
+  font-size: 160%;
+}
 
 // // // // // // // // // // // // // // // // // // // // // // //
 //                                                                //
