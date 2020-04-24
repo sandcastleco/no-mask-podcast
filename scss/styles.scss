@@ -110,7 +110,7 @@ a img:hover {
   cursor: pointer;
 }
 
-.link {
+.contact {
   @extend .ml-auto;
   @extend .float-right;
   @extend .mb-3;
@@ -119,6 +119,32 @@ a img:hover {
   bottom:0;
   right:1rem;
   font-size: 150%;
+}
+
+.about {
+  @extend .mr-auto;
+  @extend .float-left;
+  @extend .mb-3;
+  @extend .ml-4;
+  @extend .position-absolute;
+  bottom:0;
+  left:1rem;
+  font-size: 150%;
+}
+
+.card {
+  background: rgba(white, .8);
+}
+
+.blood {
+  color: $blood;
+  font-weight: $boldWeight;
+}
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
 }
 
 // // // // // // // // // // // // // // // // // // // // // // //
