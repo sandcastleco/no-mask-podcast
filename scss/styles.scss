@@ -100,8 +100,54 @@ a:hover {
   }
 }
 
-a img {
-  transition: .3s opacity;
+.apple-icon > svg {
+  fill: white;
+  transition: all .3s;
+
+  &:hover {
+    fill: rgba(#D56DFB, 1);
+    transition: all .3s;
+  }
+}
+
+.spotify-icon > svg {
+  fill: white;
+  transition: fill .3s;
+
+  &:hover {
+    fill: rgba(#1db954, 1);
+    transition: all .3s;
+  }
+}
+
+.twitter-icon > svg {
+  fill: white;
+  transition: fill .3s;
+
+  &:hover {
+    fill: rgba(#1da1f2, 1);
+    transition: all .3s;
+  }
+}
+
+.facebook-icon > svg {
+  fill: white;
+  transition: fill .3s;
+
+  &:hover {
+    fill: rgba(#4267B2, 1);
+    transition: all .3s;
+  }
+}
+
+.instagram-icon > svg {
+  fill: white;
+  transition: fill .3s;
+
+  &:hover {
+    fill: rgba(#c13584, 1);
+    transition: all .3s;
+  }
 }
 
 a img:hover {
@@ -152,7 +198,29 @@ a img:hover {
 //                               TEXT                             //
 //                                                                //
 // // // // // // // // // // // // // // // // // // // // // // //
+.fa-spotify:hover {
+	color: #1db954 !important;
+}
 
+.fa-bandcamp:hover {
+	color: #629aa9 !important;
+}
+
+.fa-apple:hover {
+	color: #999 !important;
+}
+
+.fa-instagram:hover {
+	color: #c13584 !important;
+}
+
+.fa-twitter:hover {
+	color: #1da1f2 !important;
+}
+
+.fa-facebook-f:hover {
+	color: #3b5998 !important;
+}
 
 
 // // // // // // // // // // // // // // // // // // // // // // //
