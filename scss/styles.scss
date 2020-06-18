@@ -659,11 +659,25 @@ a img:hover {
 
 .xButton {
   float: left;
-  margin-top: -45px;
-  margin-left: -26px;
+  margin-top: -44px;
   font-size: 170%;
   cursor: pointer;
   font-family: sans-serif;
+  position: absolute;
+  z-index: 40;
+
+  margin-left: -44px;
+  border: 2px solid black;
+  padding: 0rem .45rem;
+  //border-radius: 5rem;
+
+  @include media-breakpoint-up(sm) {
+    margin-left: -26px !important;
+    border: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
 
   &:hover {
     color: $blood !important;
@@ -765,5 +779,6 @@ a img:hover {
 .rewards {
   li {
     list-style: circle;
+    width: 75%;
   }
 }
