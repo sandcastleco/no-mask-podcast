@@ -83,9 +83,10 @@ a:hover {
   @include media-breakpoint-only(xs) {
     //height: 100%;
     width: 40px;
-    margin: 110px 1rem 0 1rem;
-    left: 0;
-    top: 100px;
+    margin: 0 $sp2;
+    //margin: 110px 1rem 0 1rem;
+    //left: 0;
+    //top: 100px;
   }
 
   @include media-breakpoint-up(sm) {
@@ -657,6 +658,10 @@ a img:hover {
   }
 }
 
+.nav-item {
+  margin-bottom: -.5rem;
+}
+
 .xButton {
   float: left;
   margin-top: -44px;
@@ -666,7 +671,7 @@ a img:hover {
   position: absolute;
   z-index: 40;
 
-  margin-left: -44px;
+  margin-left: -38px;
   border: 2px solid black;
   padding: 0rem .45rem;
   //border-radius: 5rem;
@@ -686,7 +691,7 @@ a img:hover {
 
 .about {
   //@extend .float-right;
-  @extend .mx-4;
+  @extend .mx-3;
   //@extend .position-absolute;
   bottom:0;
   //left:1rem;
@@ -696,7 +701,7 @@ a img:hover {
 
 .listen {
   //@extend .float-right;
-  @extend .mx-4;
+  @extend .mx-3;
   //@extend .position-absolute;
   bottom:0;
   right:0;
@@ -705,7 +710,7 @@ a img:hover {
 
 .help {
   //@extend .float-right;
-  @extend .mx-4;
+  @extend .mx-3;
   //@extend .position-absolute;
   bottom:0;
   right:0;
@@ -714,7 +719,7 @@ a img:hover {
 
 .contact {
   //@extend .float-right;
-  @extend .mx-4;
+  @extend .mx-3;
   //@extend .position-absolute;
   bottom:0;
   right:0;
@@ -733,8 +738,9 @@ a img:hover {
   margin-right: .9rem;
   z-index: 20;
   height: 80%;
-  width: 95%;
+  width: 105%;
   top: 18%;
+  left: -$sp1;
 
   overflow-y: scroll;
 
