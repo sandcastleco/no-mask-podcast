@@ -747,6 +747,7 @@ a img:hover {
   @include media-breakpoint-up(sm) {
     height: 70%;
     width: 97%;
+    left: .95rem !important;
   }
 
   h5 {
