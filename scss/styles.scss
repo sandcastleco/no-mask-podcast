@@ -83,8 +83,9 @@ a:hover {
   @include media-breakpoint-only(xs) {
     //height: 100%;
     width: 40px;
-    margin: 5% 1rem;
+    margin: 110px 1rem 0 1rem;
     left: 0;
+    top: 100px;
   }
 
   @include media-breakpoint-up(sm) {
@@ -96,59 +97,480 @@ a:hover {
   }
 
   @include media-breakpoint-up(lg) {
-    margin-top: 5%;
+    margin-top: 4%;
   }
 }
 
-.apple-icon > svg {
+.apple-icon {
+  fill: rgba(#D56DFB, 1);
+
+  &:not(.icon) {
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp1;
+    }
+
+    &:hover {
+      filter: brightness(1.08);
+      transition: filter 0.4s;
+    }
+  }
+
+  h4 {
+    color: rgba(#D56DFB, 1);
+  }
+
+  &.front > svg {
   fill: white;
   transition: all .3s;
 
-  &:hover {
-    fill: rgba(#D56DFB, 1);
-    transition: all .3s;
+    &:hover {
+      fill: rgba(#D56DFB, 1);
+      transition: all .3s;
+    }
   }
 }
 
-.spotify-icon > svg {
+
+.spotify-icon {
+  fill: rgba(#1db954, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp1;
+    }
+
+    &:hover {
+      filter: brightness(1.08);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#1db954, 1);
+  }
+
+  &.front > svg {
   fill: white;
-  transition: fill .3s;
+  transition: all .3s;
 
-  &:hover {
-    fill: rgba(#1db954, 1);
-    transition: all .3s;
+    &:hover {
+      fill: rgba(#1db954, 1);
+      transition: all .3s;
+    }
   }
 }
 
-.twitter-icon > svg {
+.twitter-icon {
+  fill: rgba(#1da1f2, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp1;
+    }
+
+    &:hover {
+      filter: brightness(1.08);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#1da1f2, 1);
+  }
+
+  &.front > svg {
   fill: white;
-  transition: fill .3s;
+  transition: all .3s;
 
-  &:hover {
-    fill: rgba(#1da1f2, 1);
-    transition: all .3s;
+    &:hover {
+      fill: rgba(#1da1f2, 1);
+      transition: all .3s;
+    }
   }
 }
 
-.facebook-icon > svg {
+.facebook-icon {
+  fill: rgba(#4267B2, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp1;
+    }
+
+    &:hover {
+      filter: brightness(1.08);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#4267B2, 1);
+  }
+
+  &.front > svg {
   fill: white;
-  transition: fill .3s;
+  transition: all .3s;
 
-  &:hover {
-    fill: rgba(#4267B2, 1);
-    transition: all .3s;
+    &:hover {
+      fill: rgba(#4267B2, 1);
+      transition: all .3s;
+    }
   }
 }
 
-.instagram-icon > svg {
+.instagram-icon {
+  fill: rgba(#c13584, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp1;
+    }
+
+    &:hover {
+      filter: brightness(1.12);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#c13584, 1);
+  }
+
+  &.front > svg {
   fill: white;
-  transition: fill .3s;
+  transition: all .3s;
 
-  &:hover {
-    fill: rgba(#c13584, 1);
-    transition: all .3s;
+    &:hover {
+      fill: rgba(#c13584, 1);
+      transition: all .3s;
+    }
   }
 }
+
+.youtube-icon {
+  fill: rgba(#FF0000, 1);
+
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp2;
+    }
+
+    &:hover {
+      filter: brightness(1.08);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#FF0000, 1);
+  }
+
+  &.front > svg {
+  fill: white;
+  transition: all .3s;
+
+    &:hover {
+      fill: rgba(#FF0000, 1);
+      transition: all .3s;
+    }
+  }
+}
+
+.google-icon {
+  fill: rgba(#65696d, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp1;
+    }
+
+    &:hover {
+      filter: brightness(1.08);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#65696d, 1);
+  }
+
+  &.front > svg {
+  fill: white;
+  transition: all .3s;
+
+    &:hover {
+      fill: rgba(#65696d, 1);
+      transition: all .3s;
+    }
+  }
+}
+
+.iheart-icon {
+  fill: rgba(#ca0f21, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp1;
+    }
+
+    &:hover {
+      filter: brightness(1.08);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#ca0f21, 1);
+  }
+}
+
+.castbox-icon {
+  fill: rgba(#f25c31, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp1;
+    }
+
+    &:hover {
+      filter: brightness(1.08);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#f25c31, 1);
+  }
+}
+
+.deezer-icon {
+  fill: rgba(#000, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp1;
+    }
+
+    &:hover {
+      filter: brightness(1.08);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#000, 1);
+  }
+}
+
+.stitcher-icon {
+  fill: rgba(#000, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp1;
+    }
+
+    &:hover {
+      filter: brightness(1.08);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#000, 1);
+  }
+}
+
+.podchaser-icon {
+  fill: rgba(#000, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp1;
+    }
+
+    &:hover {
+      filter: brightness(1.11);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#000, 1);
+  }
+}
+
+.spreaker-icon {
+  fill: rgba(#f4c316, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp1;
+    }
+
+    &:hover {
+      filter: brightness(1.04);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#f4c316, 1);
+  }
+}
+
+.overcast-icon {
+  fill: rgba(#fc7e0f, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp2;
+    }
+
+    &:hover {
+      filter: brightness(1.04);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#fc7e0f, 1);
+  }
+}
+
+.jiosaavn-icon {
+  fill: rgba(#2cc5b5, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp2;
+    }
+
+    &:hover {
+      filter: brightness(1.04);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#2cc5b5, 1);
+  }
+}
+
+.podcastaddict-icon {
+  fill: rgba(#F4842D, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp2;
+    }
+
+    &:hover {
+      filter: brightness(1.04);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#F4842D, 1);
+  }
+}
+
 
 a img:hover {
   opacity: .55;
@@ -156,34 +578,40 @@ a img:hover {
   cursor: pointer;
 }
 
-.contact {
-  @extend .ml-auto;
-  @extend .float-right;
-  @extend .mb-3;
+.bottomMenu {
+  position: absolute;
+  right:0;
+  bottom: 1.5rem;
+  //width: 100%;
+  text-align: right;
   @extend .mr-4;
-  @extend .position-absolute;
-  bottom:0;
-  right:1rem;
-  font-size: 150%;
 }
 
-.about {
-  @extend .mr-auto;
-  @extend .float-left;
-  @extend .mb-3;
-  @extend .ml-4;
-  @extend .position-absolute;
-  bottom:0;
-  left:1rem;
-  font-size: 150%;
+.aboutBlurb {
+  width: 220px;
+
+  @include media-breakpoint-up(md) {
+    bottom: 6.5rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    bottom: 3.4rem;
+  }
 }
+
+
+
+
 
 .card {
-  background: rgba(white, .8);
+  background: rgba(white, .95);
 }
 
 .blood {
   color: $blood;
+}
+
+.bold {
   font-weight: $boldWeight;
 }
 
@@ -198,41 +626,144 @@ a img:hover {
 //                               TEXT                             //
 //                                                                //
 // // // // // // // // // // // // // // // // // // // // // // //
-.fa-spotify:hover {
-	color: #1db954 !important;
-}
-
-.fa-bandcamp:hover {
-	color: #629aa9 !important;
-}
-
-.fa-apple:hover {
-	color: #999 !important;
-}
-
-.fa-instagram:hover {
-	color: #c13584 !important;
-}
-
-.fa-twitter:hover {
-	color: #1da1f2 !important;
-}
-
-.fa-facebook-f:hover {
-	color: #3b5998 !important;
-}
-
-
-// // // // // // // // // // // // // // // // // // // // // // //
-//                                                                //
-//                            BUTTONS                             //
-//                                                                //
-// // // // // // // // // // // // // // // // // // // // // // //
 
 
 
 // // // // // // // // // // // // // // // // // // // // // // //
 //                                                                //
-//                              SOCIAL                            //
+//                               NAV                              //
 //                                                                //
 // // // // // // // // // // // // // // // // // // // // // // //
+
+.blood {
+  &:hover {
+    color: rgba($blood, .7);
+    transition: color 0.2s;
+  }
+}
+
+.nav-link {
+  &.mobile{
+    color: black;
+  }
+
+
+  &:hover {
+    transition: color 0.2s;
+  }
+
+  &.active {
+    color: $blood;
+  }
+}
+
+.xButton {
+  float: left;
+  margin-top: -45px;
+  margin-left: -26px;
+  font-size: 170%;
+  cursor: pointer;
+  font-family: sans-serif;
+
+  &:hover {
+    color: $blood !important;
+  }
+}
+
+.about {
+  //@extend .float-right;
+  @extend .mx-4;
+  //@extend .position-absolute;
+  bottom:0;
+  //left:1rem;
+  right:0;
+  font-size: 150%;
+}
+
+.listen {
+  //@extend .float-right;
+  @extend .mx-4;
+  //@extend .position-absolute;
+  bottom:0;
+  right:0;
+  font-size: 150%;
+}
+
+.help {
+  //@extend .float-right;
+  @extend .mx-4;
+  //@extend .position-absolute;
+  bottom:0;
+  right:0;
+  font-size: 150%;
+}
+
+.contact {
+  //@extend .float-right;
+  @extend .mx-4;
+  //@extend .position-absolute;
+  bottom:0;
+  right:0;
+  font-size: 150%;
+}
+
+
+// // // // // // // // // // // // // // // // // // // // // // //
+//                                                                //
+//                               PAGES                            //
+//                                                                //
+// // // // // // // // // // // // // // // // // // // // // // //
+
+
+.aboutPage, .listenPage, .helpPage {
+  margin-right: .9rem;
+  z-index: 20;
+  height: 80%;
+  width: 95%;
+  top: 18%;
+
+  overflow-y: scroll;
+
+  @include media-breakpoint-up(sm) {
+    height: 70%;
+    width: 97%;
+  }
+
+  h5 {
+    font-weight: 300;
+  }
+
+  .bio {
+    margin-bottom: $sp5;
+
+    img {
+      max-width: 150px;
+      clip-path: inset(0 0 0 0 round 3%);
+    }
+
+    .bioText {
+      display: inline-flex;
+      width: 75%;
+      vertical-align: top;
+      padding: 0 $sp3;
+    }
+  }
+
+}
+
+.extraCredits {
+  a {
+    color: black;
+
+    &:hover {
+      color: $blood;
+      transition: color 0.2s;
+    }
+  }
+}
+
+.rewards {
+  li {
+    list-style: circle;
+  }
+}
