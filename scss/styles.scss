@@ -448,7 +448,7 @@ a:hover {
 }
 
 .podchaser-icon {
-  fill: rgba(#000, 1);
+  fill: rgba(#1d356f, 1);
 
   &:not(.icon) {
 
@@ -468,7 +468,7 @@ a:hover {
   }
 
   h4 {
-    color: rgba(#000, 1);
+    color: rgba(#1d356f, 1);
   }
 }
 
@@ -569,6 +569,31 @@ a:hover {
 
   h4 {
     color: rgba(#F4842D, 1);
+  }
+}
+
+.soundcloud-icon {
+  fill: rgba(#ff7700, 1);
+
+  &:not(.icon) {
+
+    width: 210px;
+
+    svg {
+      width: 50px;
+      margin-right: $sp2;
+      margin-bottom: $sp2;
+    }
+
+    &:hover {
+      filter: brightness(1.04);
+      transition: filter 0.4s;
+    }
+
+  }
+
+  h4 {
+    color: rgba(#ff7700, 1);
   }
 }
 
